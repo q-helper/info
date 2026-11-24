@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✏️ 수정 1: 브라우저 탭에 보이는 제목과 설명 -->
+  <title> 큐플레이 도우미 | 자동 족보</title>
+  <meta name="description" content="앱을 한 줄로 소개하는 문구를 여기에 적으세요.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 상단 메뉴 -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <!-- ✏️ 수정 2: 앱 이름 (로고 자리) -->
+      <a href="#top" class="logo">큐플레이 도우미</a>
+      <nav>
+        <a href="#demo">동영상</a>
+        <a href="#gallery">스크린샷</a>
+        <a href="#download" class="btn-small">판매자 연결</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 히어로 (맨 위 큰 문구) -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <!-- ✏️ 수정 3: 앱 한 줄 소개 -->
+        <p class="eyebrow">큐플레이 도우미</p>
+        <!-- ✏️ 수정 4: 메인 헤드라인 -->
+        <h1>불편한 족보 검색, <span class="accent">이제 간단하게</span></h1>
+        <!-- ✏️ 수정 5: 부연 설명 -->
+        <p class="lead">
+          한 글자, 한 글자 작성하는 기존의 불편한 족보 방식에서<br>
+          문제를 인식하고 답을 알려주는 편한 방식으로 게임을 즐겨보세요
+        </p>
+        <!-- ✏️ 수정 6: 다운로드 링크 (스토어 주소 등으로 바꾸세요) -->
+        <div class="cta">
+          <a href="https://open.kakao.com/o/sVMllsYi" class="btn btn-primary">오픈채팅 연결</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 데모 영상 -->
+    <section id="demo" class="section">
+      <div class="container">
+        <!-- ✏️ 수정 7: 섹션 제목 / 설명 -->
+        <h2 class="section-title">이렇게 동작해요</h2>
+        <p class="section-desc">실제 사용 방식을 짧은 영상으로 확인해보세요.</p>
+
+        <!-- ✏️ 수정 8: 영상 파일 교체
+             assets/video/demo.mp4 파일을 같은 이름으로 넣으면 자동 적용됩니다.
+             다른 이름을 쓰면 아래 src 경로를 바꿔주세요. -->
+        <div class="video-wrap">
+          <video controls playsinline preload="metadata">
+            <source src="assets/video/demo.mp4" type="video/mp4">
+            이 브라우저는 영상 재생을 지원하지 않습니다.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- 스크린샷 갤러리 -->
+    <section id="gallery" class="section section-alt">
+      <div class="container">
+        <!-- ✏️ 수정 9: 갤러리 제목 -->
+        <h2 class="section-title">주요 화면</h2>
+        <p class="section-desc">사진을 누르면 크게 볼 수 있어요.</p>
+
+        <!-- ✏️ 수정 10: 사진 교체/추가
+             1) assets/images 폴더에 사진을 넣고
+             2) 아래 <figure> 블록을 복사해서 src와 alt, caption만 바꾸면 됩니다.
+             사진 개수는 자유롭게 늘리거나 줄이세요. -->
+        <div class="gallery">
+          <figure>
+            <img src="assets/images/screen1.jpg" alt="메인 화면">
+            <figcaption>메인 화면 설명</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/screen2.jpg" alt="기능 화면">
+            <figcaption>기능 화면 설명</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/screen3.jpg" alt="설정 화면">
+            <figcaption>설정 화면 설명</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 다운로드 / 마무리 -->
+    <section id="download" class="section cta-section">
+      <div class="container cta-inner">
+        <!-- ✏️ 수정 11: 마지막 문구 -->
+        <h2>지금 바로 시작해보세요</h2>
+        <!-- ✏️ 수정 12: 실제 스토어/다운로드 주소 -->
+        <a href="https://open.kakao.com/o/sVMllsYi" class="btn btn-primary btn-large">오픈채팅 연결</a>
+
+        <!-- ✏️ 수정 14: 유의사항 (V 버튼을 누르면 열리고 닫힙니다. 내용은 li 항목만 바꾸세요) -->
+        <details class="notice">
+          <summary>!!꼭 읽어주세요!!</summary>
+          <ul>
+            <li>큐플레이 도우미는 ocr 화면 캡쳐를 이용한 자동족보 프로그램입니다.</li>
+            <li>신문제가 추가되어도 걱정없이 사용할 수 있어요.</li>
+            <li>간혹가다 틀리더라도 답을 변경하여 저장해둘 수 있어요.</li>
+            <li>월정액 상품으로 연장시 할인을 해드려요!</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ✏️ 수정 13: 하단 정보 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 큐플레이도우미. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 사진 크게 보기 -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="닫기">&times;</button>
+    <img id="lightbox-img" alt="">
+  </div>
+
+  <script>
+    // 갤러리 사진 클릭 시 크게 보기
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.hidden = false;
+      });
+    });
+    const closeLightbox = () => { lightbox.hidden = true; };
+    lightbox.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</body>
+</html>
